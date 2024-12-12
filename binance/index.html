@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Binance</title>
+	<link rel="stylesheet" href="index.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<header>
+		<div class="leftside">
+			<img
+				src="data:image/png;base64,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"
+				alt="shapka">
+			<nav>
+				<ul>
+					<li><a href="#">Купить криптовалюту</a></li>
+					<li><a href="#">Рынки</a></li>
+					<li><a href="#">Торговля</a></li>
+					<li><a href="#">Фьючерсы</a></li>
+					<li><a href="#">Earn</a></li>
+					<li><a href="#">Square</a></li>
+					<li><a href="#">Подробнее</a></li>
+				</ul>
+		</div>
+		<div class="rightside">
+			<div class="search">
+				<img src="image/search.webp" alt="srch">
+			</div>
+
+
+			<button class="bn-button bn-button__secondary data-size-small">Войти</button>
+			<button fr="" as="a"
+				class="bn-button bn-button__primary data-size-small header-menu-registerbtn">Регистрация</button>
+			<!-- <div class="other-img">
+				<img src="image/install.webp" alt="">
+				<img src="image/language.webp" alt="">
+				<img src="image/night.jpg" alt="">
+			</div> -->
+		</div>
+		</nav>
+	</header>
+
+	<div class="main-window">
+		<div class="hero">
+			<h1>Покупайте крипту с низкими комиссиями на <span class='colorful'>Binance</span></h1>
+			<input placeholder="Эл. почта/номер телефона" class="bn-textField-input" spellcheck="false" autocomplete=""
+				value="">
+			<button>начать</button>
+			<br>
+			<br>
+			<br>
+			<br>
+			<div class="hero-next">
+				<div class="next-leftside">
+					<p>Продолжить с</p>
+					<br>
+					<img src="image/google.jpg" alt="google">
+					<img src="image/apple.webp" alt="apple">
+				</div>
+				<div class="next-rightside">
+					<p>Cкачать приложение</p>
+					<br>
+					<img src="image/install.webp" alt="install">
+				</div>
+			</div>
+
+
+		</div>
+		<div class="container-cripto">
+			<div class="cripto">
+				<div class="cripto-active">Популярное</div>
+				<div>Новый листинг</div>
+				<div>Все 350+ монет</div>
+			</div>
+			<div class="crypto-item">
+				<div class="crypto-name">
+					<img src="image/btc.png" alt="BTC">
+					<span>BTC Bitcoin</span>
+				</div>
+				<div class="crypto-price">$96,887.96</div>
+				<div class="crypto-change">+1.80%</div>
+			</div>
+			<div class="crypto-item">
+				<div class="crypto-name">
+					<img src="image/eth.png" alt="ETH">
+					<span>ETH Ethereum</span>
+				</div>
+				<div class="crypto-price">$3,593.76</div>
+				<div class="crypto-change negative">-0.40%</div>
+			</div>
+			<div class="crypto-item">
+				<div class="crypto-name">
+					<img src="image/bnb.png" alt="BNB">
+					<span>BNB BNB</span>
+				</div>
+				<div class="crypto-price">$656.00</div>
+				<div class="crypto-change">+0.32%</div>
+			</div>
+			<div class="crypto-item">
+				<div class="crypto-name">
+					<img src="image/xrp.png" alt="XRP">
+					<span>XRP XRP</span>
+				</div>
+				<div class="crypto-price">$1.67</div>
+				<div class="crypto-change">+14.54%</div>
+			</div>
+			<div class="crypto-item">
+				<div class="crypto-name">
+					<img src="image/sol.png" alt="SOL">
+					<span>SOL Solana</span>
+				</div>
+				<div class="crypto-price">$243.00</div>
+				<div class="crypto-change">+3.41%</div>
+			</div>
+		</div>
+		<div class="container-news">
+			<div class="news">
+				<div class="news-active">
+					<div>Новости</div>
+					<div>Посмотреть все новости</div>
+
+				</div>
+				<div class="news-item">
+					<p>Дебют опционов ETF сигнализирует о бычьем тренде на биткоин</p>
+					<br>
+					<p>Metalpha назначает нового финансового директора на фоне смены руководства</p>
+					<br>
+					<p>Роль Telegram в глобальном принятии криптовалют и его влияние на браузеры</p>
+					<br>
+					<p>Генеральный директор CryptoQuant: доминирование биткоина сохранится в краткосрочной перспективе</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+
+	<div class="two-screen">
+		<div class="left-side-two">
+			<img src="image/phone.png" alt="phone">
+			<div class="left-two-item">
+				<p>Для ПК</p>
+				<div class="left-active-two">
+					<p>Lite</p>
+				</div>
+				<p>Pro</p>
+			</div>
+
+		</div>
+		<div class="rightside-two">
+			<h2>Торгуйте на ходу. Где и когда угодно.</h2>
+			<br>
+			<br>
+			<br>
+			<div class="qr-section">
+				<div class="qr-code">
+					<img src="image/qrrr.png" alt="QR Code">
+				</div>
+				<div>
+					<p>Отсканируйте QR-код, чтобы загрузить приложение</p>
+					<p><strong>iOS и Android</strong></p>
+					<br>
+					<br>
+					<br>
+				</div>
+			</div>
+			<div class="platforms">
+				<div class="platform">
+					<img src="image/apple.webp" alt="MacOS">
+					<p>MacOS</p>
+				</div>
+				<div class="platform">
+					<img src="image/windows.webp" alt="Windows">
+					<p>Windows</p>
+				</div>
+				<div class="platform">
+					<img src="image/linux.png" alt="Linux">
+					<p>Linux</p>
+				</div>
+			</div>
+			<br>
+			<br>
+			<br>
+			<div class="download-options">
+				<p>Другие варианты загрузки</p>
+			</div>
+		</div>
+	</div>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
+	<div class="question">
+		<h2>Часто задаваемые вопросы</h2>
+		<div class="faq-item">
+			<span>
+				<div class="number">1</div>Что такое криптовалютная биржа
+			</span>
+			<div class="plus">+</div>
+		</div>
+		<div class="faq-item">
+			<span>
+				<div class="number">2</div>Какие продукты представлены на Binance
+			</span>
+			<div class="plus">+</div>
+		</div>
+		<div class="faq-item">
+			<span>
+				<div class="number">3</div>Как купить биткоин и другие криптовалюты на Binance
+			</span>
+			<div class="plus">+</div>
+		</div>
+		<div class="faq-item">
+			<span>
+				<div class="number">4</div>Как отслеживать цены на криптовалюту
+			</span>
+			<div class="plus">+</div>
+		</div>
+		<div class="faq-item">
+			<span>
+				<div class="number">5</div>Как торговать криптовалютой на Binance
+			</span>
+			<div class="plus">+</div>
+		</div>
+		<div class="faq-item">
+			<span>
+				<div class="number">6</div>Как заработать на криптовалюте на Binance
+			</span>
+			<div class="plus">+</div>
+		</div>
+	</div>
+
+	<div class="start">
+		<h2>Начните зарабатывать сегодня</h2>
+		<br>
+		<br>
+		<br>
+		<button>Зарегестрироваться</button>
+	</div>
+
+	<div class="info">
+		<div class="section-info">
+			<h3>Сообщество</h3>
+			<ul>
+				<a href="#">
+					<li>Discord</li>
+				</a>
+				<a href="#">
+					<li>Telegram</li>
+				</a>
+				<a href="#">
+					<li>TikTok</li>
+				</a>
+				<a href="#">
+					<li>Facebook</li>
+				</a>
+				<a href="#">
+					<li>X</li>
+				</a>
+				<a href="#">
+					<li>Reddit</li>
+				</a>
+				<a href="#">
+					<li>Instagram</li>
+				</a>
+			</ul>
+		</div>
+		<div class="section-info">
+			<h3>О нас</h3>
+			<ul>
+				<li>О нас</li>
+				<li>Вакансии</li>
+				<li>Анонсы</li>
+				<li>Новости</li>
+				<li>Пресс-центр</li>
+				<li>Правовое регулирование</li>
+				<li>Условия</li>
+				<li>Конфиденциальность</li>
+				<li>Укрепление доверия</li>
+				<li>Блог</li>
+				<li>Сообщество</li>
+				<li>Предупреждение о рисках</li>
+				<li>Уведомления</li>
+				<li>Приложения</li>
+				<li>Приложение для ПК</li>
+			</ul>
+		</div>
+		<div class="section-info">
+			<h3>Продукты</h3>
+			<ul>
+				<li>Exchange</li>
+				<li>Купить криптовалюту</li>
+				<li>Pay</li>
+				<li>Academy</li>
+				<li>Live</li>
+				<li>Tax</li>
+				<li>Подарочная карта</li>
+				<li>Launchpool</li>
+				<li>Автоинвестирование</li>
+				<li>Стейкинг ETH</li>
+				<li>NFT</li>
+				<li>BABT</li>
+				<li>Research</li>
+				<li>Благотворительность</li>
+			</ul>
+		</div>
+		<div class="section-info">
+			<h3>Для компаний</h3>
+			<ul>
+				<li>Стать P2P-мерчантом</li>
+				<li>Заявка на получение статуса мерчанта P2Pro</li>
+				<li>Заявка на листинг</li>
+				<li>Институциональные и VIP-услуги</li>
+				<li>Labs</li>
+				<li>Binance Connect</li>
+			</ul>
+		</div>
+		<div class="section-info">
+			<h3>Услуги</h3>
+			<ul>
+				<li>Партнерская программа</li>
+				<li>Реферальная программа</li>
+				<li>OTC торговля</li>
+				<li>Исторические данные о рынке</li>
+				<li>Сведения о хранении активов</li>
+			</ul>
+		</div>
+		<div class="section-info">
+			<h3>Служба поддержки</h3>
+			<ul>
+				<li>Помощь в чате 24/7</li>
+				<li>Центр поддержки</li>
+				<li>Отзывы и предложения о продуктах</li>
+				<li>Комиссии</li>
+				<li>API</li>
+				<li>Binance Verify</li>
+				<li>Правила торговли</li>
+				<li>Портал аирдропов Binance</li>
+				<li>Система запросов для правоохранительных органов</li>
+			</ul>
+		</div>
+	</div>
+
+
+	<footer>
+		<p>Binance© 2024 <a href="#">Настройки cookie</a></p>
+	</footer>
+</body>
+
+</html>
